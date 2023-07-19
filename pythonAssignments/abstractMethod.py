@@ -7,10 +7,6 @@ class Vehicle(ABC): #creates a class that will be an abstract based class
     def go(self):
         pass        #so we pass it without any arguments or instructions
 
-    def stop(self): #this is a regular method that child classes do not need to define to use.
-        print("stop using brakes")
-
-        
 class Car(Vehicle): #child class of Vehicle. This class will use the declared method "go()"
 
     def go(self):   #by defining what go does the class Car can now become an instantiate with the inherited method 
@@ -27,5 +23,4 @@ motorcycle = Motorcycle()
 
 
 car.go()    #here we are calling the go() method from the class Car() using the variable "car"
-car.stop()  #calling the regular method the child class inherited from the parent class.
 motorcycle.go() #same here but with the class Motorcycle()
